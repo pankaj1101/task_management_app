@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:task_management_app/core/constants/app_assets.dart';
 import 'package:task_management_app/core/constants/app_colors.dart';
 import 'package:task_management_app/core/router/app_router.dart';
@@ -27,9 +28,18 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
-  void _navigateToOnboardingScreen() {
+  // Navigate to login or onboarding screen...
+  Future<void> _navigateToOnboardingScreen() async {
+    final prefs = await SharedPreferences.getInstance();
+    final onboardingDone = prefs.getBool('onboarding_completed') ?? false;
+
     Future.delayed(Duration(seconds: 2)).then((_) {
-      AppRouter.pushNamedAndRemoveUntil(context, RoutesNames.onBoarding);
+      if (mounted) {
+        AppRouter.pushNamedAndRemoveUntil(
+          context,
+          onboardingDone ? RoutesNames.login : RoutesNames.onBoarding,
+        );
+      }
     });
   }
 }

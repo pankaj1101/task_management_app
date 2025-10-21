@@ -14,6 +14,9 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.2.1
+  flutter_screenutil: ^5.9.3
+  flutter_riverpod: ^3.0.3
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
@@ -26,8 +29,7 @@ flutter:
 
   assets:
     - assets/icons/
-    # - assets/images/
-  #   - images/a_dot_ham.jpeg
+    - assets/images/
 
   fonts:
     - family: SF Pro Display
