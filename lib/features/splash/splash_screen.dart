@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void _navigateToOnboardingScreen() {
     Future.delayed(Duration(seconds: 2)).then((_) {
-      AppRouter.push(context, RoutesNames.onBoarding);
+      AppRouter.pushNamedAndRemoveUntil(context, RoutesNames.onBoarding);
     });
   }
 }

@@ -5,7 +5,20 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: PageView.builder(
+        itemCount: 3,
+        itemBuilder: (_, index) {
+          return Container(
+            color:
+                index == 0
+                    ? Colors.red
+                    : index == 1
+                    ? Colors.green
+                    : Colors.yellow,
+          );
+        },
+      ),
+    );
   }
 }
- 

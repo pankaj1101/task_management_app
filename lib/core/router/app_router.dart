@@ -33,6 +33,10 @@ class AppRouter {
     Navigator.pushReplacementNamed(context, routeName);
   }
 
+  static void pushNamedAndRemoveUntil(BuildContext context, String routeName) {
+    Navigator.pushNamedAndRemoveUntil(context, routeName, (_) => false);
+  }
+
   static void pop(BuildContext context) {
     Navigator.pop(context);
   }
