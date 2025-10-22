@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/core/constants/app_colors.dart';
+import 'package:task_management_app/core/router/app_router.dart';
 
 class AppTextFormField extends StatelessWidget {
   final TextEditingController controller;
@@ -18,6 +19,9 @@ class AppTextFormField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       obscureText: obscureText,
+      onTapOutside: (event) {
+        FocusScope.of(context).unfocus();
+      },
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(horizontal: 10.r, vertical: 5.r),
         border: OutlineInputBorder(
