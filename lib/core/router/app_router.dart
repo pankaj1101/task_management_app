@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_management_app/core/router/routes_names.dart';
-import 'package:task_management_app/features/login/login_screen.dart';
+import 'package:task_management_app/features/auth/login/login_screen.dart';
 import 'package:task_management_app/features/onboarding/onboarding_screen.dart';
 import 'package:task_management_app/features/splash/splash_screen.dart';
 

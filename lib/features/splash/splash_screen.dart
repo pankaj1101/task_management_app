@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:task_management_app/core/constants/app_assets.dart';
-import 'package:task_management_app/core/constants/app_colors.dart';
+import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/router/app_router.dart';
 import 'package:task_management_app/core/router/routes_names.dart';
 
