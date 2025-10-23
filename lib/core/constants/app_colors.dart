@@ -12,4 +12,11 @@ class AppColors {
   static final Color secondary500 = Color(0xff1A1C1E);
   static final Color btnBorderColor = Color(0xffEFF0F6);
   static const Color errorColor = Color(0xFFD32F2F);
+  static const Color brownColor = Color(0xFF333333);
+  static const Color blackColor = Color(0xFF000000);
+  static const Color grey3Color = Color(0xFFDDDADA);
+  static const Color grey1Color = Color(0xFF7B6F72);
+  static const Color highPriorityColor = Color(0xFFEA4335);
+  static const Color mediumPriorityColor = Color(0xFFED9611);
+  static const Color lowPriorityColor = Color(0xFF24A19C);
 }
