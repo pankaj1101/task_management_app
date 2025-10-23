@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:task_management_app/core/router/routes_names.dart';
 import 'package:task_management_app/features/auth/login/login_screen.dart';
 import 'package:task_management_app/features/auth/signup/signup_screen.dart';
+import 'package:task_management_app/features/calendar/calendar_screen.dart';
+import 'package:task_management_app/features/home/home_screen.dart';
+import 'package:task_management_app/features/notification/notification_screen.dart';
 import 'package:task_management_app/features/onboarding/onboarding_screen.dart';
+import 'package:task_management_app/features/profile/profile_screen.dart';
 import 'package:task_management_app/features/splash/splash_screen.dart';
 
 class AppRouter {
@@ -17,6 +21,14 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const LoginScreen());
       case RoutesNames.signup:
         return MaterialPageRoute(builder: (_) => const SignupScreen());
+      case RoutesNames.home:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case RoutesNames.notification:
+        return MaterialPageRoute(builder: (_) => const NotificationScreen());
+      case RoutesNames.calender:
+        return MaterialPageRoute(builder: (_) => const CalendarScreen());
+      case RoutesNames.profile:
+        return MaterialPageRoute(builder: (_) => const ProfileScreen());
 
       default:
         return MaterialPageRoute(
