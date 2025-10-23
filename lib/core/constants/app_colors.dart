@@ -11,4 +11,5 @@ class AppColors {
   static final Color borderColor = Color(0xffEDF1F3);
   static final Color secondary500 = Color(0xff1A1C1E);
   static final Color btnBorderColor = Color(0xffEFF0F6);
+  static const Color errorColor = Color(0xFFD32F2F);
 }

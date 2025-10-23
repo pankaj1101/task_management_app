@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_management_app/core/router/routes_names.dart';
 import 'package:task_management_app/features/auth/login/login_screen.dart';
+import 'package:task_management_app/features/auth/signup/signup_screen.dart';
 import 'package:task_management_app/features/onboarding/onboarding_screen.dart';
 import 'package:task_management_app/features/splash/splash_screen.dart';
 
@@ -14,6 +15,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
       case RoutesNames.login:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
+      case RoutesNames.signup:
+        return MaterialPageRoute(builder: (_) => const SignupScreen());
 
       default:
         return MaterialPageRoute(

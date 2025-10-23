@@ -5,6 +5,7 @@ import 'package:task_management_app/core/constants/app_colors.dart';
 import 'package:task_management_app/core/constants/app_strings.dart';
 import 'package:task_management_app/core/router/app_router.dart';
 import 'package:task_management_app/core/router/routes_names.dart';
+import 'package:task_management_app/core/theme/app_theme.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -16,15 +17,11 @@ class App extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) {
-        
         return ProviderScope(
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             title: AppStrings.appTitle,
-            theme: ThemeData(
-              fontFamily: 'SF Pro Display',
-              primaryColor: AppColors.primaryColor,
-            ),
+            theme: AppTheme.lightTheme,
             initialRoute: RoutesNames.splash,
             onGenerateRoute: AppRouter.generateRoute,
           ),
