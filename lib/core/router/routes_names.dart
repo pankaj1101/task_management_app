@@ -8,4 +8,5 @@ class RoutesNames {
   static const String notification = '/notification';
   static const String calender = '/calender';
   static const String profile = '/profile';
+  static const String mainScreen = '/main_screen';
 }

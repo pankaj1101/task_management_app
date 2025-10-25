@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/features/profile/components/profile_items.dart';
-import 'package:task_management_app/widgets/app_bottom_navigation_bar.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -42,10 +41,6 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      bottomNavigationBar: AppBottomNavigationBar(
-        currentIndex: 3,
-        imageUrl: AppAssets.dummyPersonImageUrl,
       ),
     );
   }

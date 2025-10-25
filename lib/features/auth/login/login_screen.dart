@@ -206,7 +206,12 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                               SizedBox(height: 5.h),
                               AppButtonWidget(
-                                onTap: () {},
+                                onTap: () {
+                                  AppRouter.pushNamedAndRemoveUntil(
+                                    context,
+                                    RoutesNames.mainScreen,
+                                  );
+                                },
                                 btnText: AppStrings.loginText,
                               ),
                               SizedBox(height: 5.h),

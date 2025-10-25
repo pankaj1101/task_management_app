@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/legacy.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 
-class AppBottomNavigationBar extends StatelessWidget {
-  final int currentIndex;
+final bottomNavIndexProvider = StateProvider<int>((ref) => 0);
+
+class AppBottomNavigationBar extends ConsumerWidget {
   final String? imageUrl;
-  const AppBottomNavigationBar({
-    super.key,
-    this.currentIndex = 0,
-    this.imageUrl,
-  });
+  const AppBottomNavigationBar({super.key, this.imageUrl});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final currentIndex = ref.watch(bottomNavIndexProvider);
+
     return BottomNavigationBar(
       backgroundColor: AppColors.whiteColor,
       showSelectedLabels: true,
@@ -20,7 +21,12 @@ class AppBottomNavigationBar extends StatelessWidget {
       selectedItemColor: AppColors.primaryColor,
       unselectedItemColor: AppColors.neutralSecondaryColor,
 
-      onTap: (value) {},
+      onTap: (value) {
+        if (value == 2) {
+        } else {
+          ref.read(bottomNavIndexProvider.notifier).state = value;
+        }
+      },
       currentIndex: currentIndex,
 
       type: BottomNavigationBarType.fixed,
@@ -80,13 +86,12 @@ class AppBottomNavigationBar extends StatelessWidget {
           icon:
               imageUrl != null
                   ? CircleAvatar(
-                    backgroundImage: NetworkImage(
-                      imageUrl!,
-                    ),
+                    backgroundImage: NetworkImage(imageUrl!),
+                    radius: 15,
                   )
                   : CircleAvatar(
                     radius: 15,
-                    backgroundColor: AppColors.grey3Color,
+                    backgroundColor: AppColors.whiteColor,
                     child: Icon(
                       Icons.person,
                       color:

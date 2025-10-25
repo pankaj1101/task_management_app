@@ -4,6 +4,7 @@ import 'package:task_management_app/features/auth/login/login_screen.dart';
 import 'package:task_management_app/features/auth/signup/signup_screen.dart';
 import 'package:task_management_app/features/calendar/calendar_screen.dart';
 import 'package:task_management_app/features/home/home_screen.dart';
+import 'package:task_management_app/features/main_screen/main_screen.dart';
 import 'package:task_management_app/features/notification/notification_screen.dart';
 import 'package:task_management_app/features/onboarding/onboarding_screen.dart';
 import 'package:task_management_app/features/profile/profile_screen.dart';
@@ -29,6 +30,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const CalendarScreen());
       case RoutesNames.profile:
         return MaterialPageRoute(builder: (_) => const ProfileScreen());
+      case RoutesNames.mainScreen:
+        return MaterialPageRoute(builder: (_) => const MainScreen());
 
       default:
         return MaterialPageRoute(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/enums/task_priority_enums.dart';
-import 'package:task_management_app/widgets/app_bottom_navigation_bar.dart';
 import 'package:task_management_app/widgets/floating_action_widget.dart';
 
 import 'components/home_header.dart';
@@ -112,7 +111,6 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionWidget(onTap: () {}),
-      bottomNavigationBar: AppBottomNavigationBar(),
     );
   }
 }
