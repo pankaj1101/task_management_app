@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:task_management_app/core/constants/app_assets.dart';
+import 'package:task_management_app/core/constants/app_colors.dart';
 import 'package:task_management_app/features/calendar/calendar_screen.dart';
 import 'package:task_management_app/features/home/home_screen.dart';
 import 'package:task_management_app/features/notification/notification_screen.dart';
@@ -25,6 +26,7 @@ class MainScreen extends ConsumerWidget {
     String dummyImageUrl = AppAssets.dummyPersonImageUrl;
 
     return Scaffold(
+      backgroundColor: AppColors.whiteColor,
       body: _pages[currentIndex],
       bottomNavigationBar: AppBottomNavigationBar(imageUrl: dummyImageUrl),
     );
