@@ -14,4 +14,15 @@ class AppAssets {
   static final String notificationIcon =
       'assets/icons/bottom_navigation/notification.svg';
   // *****bottom_navigation***** //
+
+  // Profile page icons
+  static final String editIcon = 'assets/icons/pencil.svg';
+  static final String lockIcon = 'assets/icons/password.svg';
+  static final String logoutIcon = 'assets/icons/logout.svg';
+  static final String profileBackground =
+      'assets/images/profile_background.png';
+  static final String dummyPersonImageUrl =
+      'https://www.alucoildesign.com/assets/pages/media/profile/profile_user.jpg';
+
+  // Profile page icons
 }

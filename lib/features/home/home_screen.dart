@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/enums/task_priority_enums.dart';
+import 'package:task_management_app/widgets/app_bottom_navigation_bar.dart';
+import 'package:task_management_app/widgets/floating_action_widget.dart';
 
 import 'components/home_header.dart';
 import 'components/task_card_item.dart';
@@ -110,85 +111,8 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: AppColors.primaryColor,
-        foregroundColor: AppColors.whiteColor,
-        shape: CircleBorder(),
-        child: Icon(Icons.add),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppColors.whiteColor,
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
-        selectedItemColor: AppColors.primaryColor,
-        unselectedItemColor: AppColors.neutralSecondaryColor,
-
-        onTap: (value) {},
-        currentIndex: 2,
-
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-            activeIcon: SvgPicture.asset(
-              AppAssets.homeIcon,
-              colorFilter: ColorFilter.mode(
-                AppColors.primaryColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            icon: SvgPicture.asset(
-              AppAssets.homeIcon,
-              colorFilter: ColorFilter.mode(
-                AppColors.neutralSecondaryColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            activeIcon: SvgPicture.asset(
-              AppAssets.notificationIcon,
-              colorFilter: ColorFilter.mode(
-                AppColors.primaryColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            icon: SvgPicture.asset(
-              AppAssets.notificationIcon,
-              colorFilter: ColorFilter.mode(
-                AppColors.neutralSecondaryColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            label: 'Notification',
-          ),
-          BottomNavigationBarItem(
-            activeIcon: SvgPicture.asset(
-              AppAssets.calenderIconB,
-              colorFilter: ColorFilter.mode(
-                AppColors.primaryColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            icon: SvgPicture.asset(
-              AppAssets.calenderIconB,
-              colorFilter: ColorFilter.mode(
-                AppColors.neutralSecondaryColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            label: 'Calendar',
-          ),
-          BottomNavigationBarItem(
-            icon: CircleAvatar(
-              radius: 15,
-              backgroundColor: AppColors.neutralSecondaryColor,
-            ),
-            label: 'Profile',
-          ),
-        ],
-      ),
+      floatingActionButton: FloatingActionWidget(onTap: () {}),
+      bottomNavigationBar: AppBottomNavigationBar(),
     );
   }
 }
