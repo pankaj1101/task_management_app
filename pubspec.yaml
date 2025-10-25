@@ -29,6 +29,7 @@ flutter:
 
   assets:
     - assets/icons/
+    - assets/icons/bottom_navigation/
     - assets/images/
 
   fonts:
