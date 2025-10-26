@@ -25,4 +25,8 @@ class AppAssets {
       'https://www.alucoildesign.com/assets/pages/media/profile/profile_user.jpg';
 
   // Profile page icons
+  static final String clockIcon = 'assets/icons/clock.svg';
+  static final String flagIcon1 = 'assets/icons/flag1.svg';
+  static final String sendIcon = 'assets/icons/send.svg';
+
 }

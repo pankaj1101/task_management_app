@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/application/onboarding/onboarding_notifier.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/router/app_router.dart';
-import 'package:task_management_app/features/onboarding/components/bottom_section_onboarding_screen.dart';
+import 'package:task_management_app/presentation/onboarding/components/bottom_section_onboarding_screen.dart';
 
 class OnboardingScreen extends ConsumerWidget {
   const OnboardingScreen({super.key});

@@ -6,6 +6,7 @@ import 'package:task_management_app/widgets/floating_action_widget.dart';
 
 import 'components/home_header.dart';
 import 'components/task_card_item.dart';
+import 'components/todo_add_sheet.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -110,7 +111,11 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionWidget(onTap: () {}),
+      floatingActionButton: FloatingActionWidget(
+        onTap: () {
+          showTodoAddBottomSheet(context);
+        },
+      ),
     );
   }
 }
