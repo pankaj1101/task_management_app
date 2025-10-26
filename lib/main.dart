@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_management_app/app.dart';
 
-Future<void> main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(App());
 }
