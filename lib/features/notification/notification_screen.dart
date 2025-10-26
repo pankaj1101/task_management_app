@@ -10,7 +10,14 @@ class NotificationScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.whiteColor,
       appBar: AppBar(
-        title: Text('Notifications'),
+        title: Text(
+          'Notifications',
+          style: TextStyle(
+            fontSize: 24.r,
+            fontWeight: FontWeight.w500,
+            color: AppColors.primaryTextColor,
+          ),
+        ),
         backgroundColor: AppColors.whiteColor,
       ),
       body: ListView.separated(
@@ -21,7 +28,10 @@ class NotificationScreen extends StatelessWidget {
             child: DecoratedBox(
               decoration: BoxDecoration(
                 color: AppColors.whiteColor,
-                border: Border.all(color: AppColors.greyBorderColor),
+                border: Border.all(
+                  color: AppColors.greyBorderColor,
+                  width: 0.2,
+                ),
                 borderRadius: BorderRadiusGeometry.circular(12.r),
                 boxShadow: [
                   BoxShadow(
@@ -58,9 +68,7 @@ class NotificationScreen extends StatelessWidget {
             ),
           );
         },
-        separatorBuilder: (BuildContext context, int index) {
-          return SizedBox(height: 16.h);
-        },
+        separatorBuilder: (_, __) => SizedBox(height: 16.h),
       ),
     );
   }

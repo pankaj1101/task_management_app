@@ -22,10 +22,7 @@ class AppBottomNavigationBar extends ConsumerWidget {
       unselectedItemColor: AppColors.neutralSecondaryColor,
 
       onTap: (value) {
-        if (value == 2) {
-        } else {
-          ref.read(bottomNavIndexProvider.notifier).state = value;
-        }
+        ref.read(bottomNavIndexProvider.notifier).state = value;
       },
       currentIndex: currentIndex,
 
