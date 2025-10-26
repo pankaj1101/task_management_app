@@ -19,4 +19,7 @@ class AppColors {
   static const Color highPriorityColor = Color(0xFFEA4335);
   static const Color mediumPriorityColor = Color(0xFFED9611);
   static const Color lowPriorityColor = Color(0xFF24A19C);
+  static const Color greyBorderColor = Color(0xFFA0AAB8);
+  static const Color blancoPrimaryColor = Color(0xFFA0AAB8);
+  static const Color dateCardS = Color(0xFFF7F8F8);
 }
