@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
-import 'package:task_management_app/presentation/profile/components/profile_items.dart';
+import 'package:task_management_app/presentation/pages/profile/components/profile_items.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

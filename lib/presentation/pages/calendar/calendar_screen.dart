@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/enums/task_priority_enums.dart';
-import 'package:task_management_app/presentation/home/components/task_card_item.dart';
-import 'package:task_management_app/widgets/horizontal_calendar.dart';
+import 'package:task_management_app/presentation/pages/home/components/task_card_item.dart';
+import 'package:task_management_app/presentation/widgets/horizontal_calendar.dart';
 
 class CalendarScreen extends StatelessWidget {
   const CalendarScreen({super.key});

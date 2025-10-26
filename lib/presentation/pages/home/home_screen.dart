@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/enums/task_priority_enums.dart';
-import 'package:task_management_app/widgets/floating_action_widget.dart';
+import 'package:task_management_app/presentation/widgets/floating_action_widget.dart';
 
 import 'components/home_header.dart';
 import 'components/task_card_item.dart';

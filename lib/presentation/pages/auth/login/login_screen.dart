@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:task_management_app/application/login/login_notifier.dart';
+import 'package:task_management_app/presentation/providers/login/login_notifier.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/router/app_router.dart';
 import 'package:task_management_app/core/router/routes_names.dart';
-import 'package:task_management_app/widgets/app_button_widget.dart';
-import 'package:task_management_app/widgets/app_button_with_icon_widget.dart';
-import 'package:task_management_app/widgets/app_textformfield.dart';
-import 'package:task_management_app/widgets/background_gradient.dart';
+import 'package:task_management_app/presentation/widgets/app_button_widget.dart';
+import 'package:task_management_app/presentation/widgets/app_button_with_icon_widget.dart';
+import 'package:task_management_app/presentation/widgets/app_textformfield.dart';
+import 'package:task_management_app/presentation/widgets/background_gradient.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

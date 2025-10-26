@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:task_management_app/application/signup/signup_notifier.dart';
+import 'package:task_management_app/presentation/providers/signup/signup_notifier.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/router/app_router.dart';
-import 'package:task_management_app/widgets/app_button_widget.dart';
-import 'package:task_management_app/widgets/app_textformfield.dart';
-import 'package:task_management_app/widgets/background_gradient.dart';
+import 'package:task_management_app/presentation/widgets/app_button_widget.dart';
+import 'package:task_management_app/presentation/widgets/app_textformfield.dart';
+import 'package:task_management_app/presentation/widgets/background_gradient.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});

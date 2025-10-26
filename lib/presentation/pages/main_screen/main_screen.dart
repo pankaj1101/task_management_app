@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:task_management_app/core/constants/app_assets.dart';
 import 'package:task_management_app/core/constants/app_colors.dart';
-import 'package:task_management_app/presentation/calendar/calendar_screen.dart';
-import 'package:task_management_app/presentation/home/home_screen.dart';
-import 'package:task_management_app/presentation/notification/notification_screen.dart';
-import 'package:task_management_app/presentation/profile/profile_screen.dart';
-import 'package:task_management_app/widgets/app_bottom_navigation_bar.dart';
+import 'package:task_management_app/presentation/pages/calendar/calendar_screen.dart';
+import 'package:task_management_app/presentation/pages/home/home_screen.dart';
+import 'package:task_management_app/presentation/pages/notification/notification_screen.dart';
+import 'package:task_management_app/presentation/pages/profile/profile_screen.dart';
+import 'package:task_management_app/presentation/widgets/app_bottom_navigation_bar.dart';
 
 class MainScreen extends ConsumerWidget {
   const MainScreen({super.key});

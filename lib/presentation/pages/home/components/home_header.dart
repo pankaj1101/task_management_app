@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
-import 'package:task_management_app/widgets/search_task_field.dart';
+import 'package:task_management_app/presentation/widgets/search_task_field.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});

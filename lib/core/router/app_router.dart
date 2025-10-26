@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:task_management_app/core/router/routes_names.dart';
-import 'package:task_management_app/presentation/auth/login/login_screen.dart';
-import 'package:task_management_app/presentation/auth/signup/signup_screen.dart';
-import 'package:task_management_app/presentation/calendar/calendar_screen.dart';
-import 'package:task_management_app/presentation/home/home_screen.dart';
-import 'package:task_management_app/presentation/main_screen/main_screen.dart';
-import 'package:task_management_app/presentation/notification/notification_screen.dart';
-import 'package:task_management_app/presentation/onboarding/onboarding_screen.dart';
-import 'package:task_management_app/presentation/profile/profile_screen.dart';
-import 'package:task_management_app/presentation/splash/splash_screen.dart';
+import 'package:task_management_app/presentation/pages/auth/login/login_screen.dart';
+import 'package:task_management_app/presentation/pages/auth/signup/signup_screen.dart';
+import 'package:task_management_app/presentation/pages/calendar/calendar_screen.dart';
+import 'package:task_management_app/presentation/pages/home/home_screen.dart';
+import 'package:task_management_app/presentation/pages/main_screen/main_screen.dart';
+import 'package:task_management_app/presentation/pages/notification/notification_screen.dart';
+import 'package:task_management_app/presentation/pages/onboarding/onboarding_screen.dart';
+import 'package:task_management_app/presentation/pages/profile/profile_screen.dart';
+import 'package:task_management_app/presentation/pages/splash/splash_screen.dart';
 
 class AppRouter {
   // Route generator
