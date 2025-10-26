@@ -1,4 +1,4 @@
-import 'package:task_management_app/domain/onboarding/entities/onboarding_item.dart';
+import 'package:task_management_app/domain/entities/onboarding_item.dart';
 
 class OnboardingRepository {
   const OnboardingRepository();

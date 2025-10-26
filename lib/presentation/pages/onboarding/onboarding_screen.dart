@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:task_management_app/presentation/providers/onboarding/onboarding_notifier.dart';
+import 'package:task_management_app/presentation/providers/onboarding_notifier.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/router/app_router.dart';
 import 'package:task_management_app/presentation/pages/onboarding/components/bottom_section_onboarding_screen.dart';

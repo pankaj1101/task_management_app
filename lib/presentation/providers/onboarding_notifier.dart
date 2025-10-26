@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:task_management_app/domain/onboarding/entities/onboarding_item.dart';
-import 'package:task_management_app/data/onboarding/onboarding_repository.dart';
+import 'package:task_management_app/domain/entities/onboarding_item.dart';
+import 'package:task_management_app/data/repositories/onboarding_repository.dart';
 
 final onboardingRepositoryProvider = Provider<OnboardingRepository>((ref) {
   return const OnboardingRepository();
