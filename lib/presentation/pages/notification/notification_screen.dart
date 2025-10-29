@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/core/constants/app_colors.dart';
+import 'package:task_management_app/presentation/widgets/responsive_center_body.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});
@@ -20,12 +21,11 @@ class NotificationScreen extends StatelessWidget {
         ),
         backgroundColor: AppColors.whiteColor,
       ),
-      body: ListView.separated(
-        itemCount: 5,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24.h),
-            child: DecoratedBox(
+      body: ResponsiveCenterBody(
+        child: ListView.separated(
+          itemCount: 5,
+          itemBuilder: (context, index) {
+            return DecoratedBox(
               decoration: BoxDecoration(
                 color: AppColors.whiteColor,
                 border: Border.all(
@@ -65,10 +65,10 @@ class NotificationScreen extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
-          );
-        },
-        separatorBuilder: (_, __) => SizedBox(height: 16.h),
+            );
+          },
+          separatorBuilder: (_, __) => SizedBox(height: 16.h),
+        ),
       ),
     );
   }

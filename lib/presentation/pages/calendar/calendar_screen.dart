@@ -4,6 +4,7 @@ import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/enums/task_priority_enums.dart';
 import 'package:task_management_app/presentation/pages/home/components/task_card_item.dart';
 import 'package:task_management_app/presentation/widgets/horizontal_calendar.dart';
+import 'package:task_management_app/presentation/widgets/responsive_center_body.dart';
 
 class CalendarScreen extends StatelessWidget {
   const CalendarScreen({super.key});
@@ -12,7 +13,8 @@ class CalendarScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.whiteColor,
-      body: SafeArea(
+      body: ResponsiveCenterBody(
+        padding: EdgeInsets.zero,
         child: Column(
           children: [
             SizedBox(height: 20.h),

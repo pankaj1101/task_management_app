@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -25,7 +24,7 @@ class ProfileItems extends StatelessWidget {
         borderRadius: BorderRadiusGeometry.circular(10.r),
       ),
       leading: Container(
-        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+        padding: EdgeInsets.symmetric(horizontal: 8.r, vertical: 10.r),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100.r),
           color: AppColors.primaryColor.withValues(alpha: 0.15),

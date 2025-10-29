@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/presentation/pages/profile/components/profile_items.dart';
+import 'package:task_management_app/presentation/widgets/responsive_center_body.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -10,37 +11,41 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          // top section...
-          _profileTopSection(),
-          // middle section...
-          Padding(
-            padding: EdgeInsets.all(32.r),
-            child: Column(
-              spacing: 15,
-              children: [
-                SizedBox(height: 100.h),
-                ProfileItems(
-                  onTap: () {},
-                  title: 'Edit Profile',
-                  icon: AppAssets.editIcon,
-                ),
-                ProfileItems(
-                  onTap: () {},
-                  title: 'Change Password',
-                  icon: AppAssets.lockIcon,
-                ),
-                ProfileItems(
-                  onTap: () {},
-                  title: 'Log out',
-                  icon: AppAssets.logoutIcon,
-                  isRightIconRequired: false,
-                ),
-              ],
+      backgroundColor: AppColors.whiteColor,
+      body: ResponsiveCenterBody(
+        padding: EdgeInsets.zero,
+        child: Column(
+          children: [
+            // top section...
+            _profileTopSection(),
+            // middle section...
+            Padding(
+              padding: EdgeInsets.all(32.r),
+              child: Column(
+                spacing: 15.h,
+                children: [
+                  SizedBox(height: 100.h),
+                  ProfileItems(
+                    onTap: () {},
+                    title: 'Edit Profile',
+                    icon: AppAssets.editIcon,
+                  ),
+                  ProfileItems(
+                    onTap: () {},
+                    title: 'Change Password',
+                    icon: AppAssets.lockIcon,
+                  ),
+                  ProfileItems(
+                    onTap: () {},
+                    title: 'Log out',
+                    icon: AppAssets.logoutIcon,
+                    isRightIconRequired: false,
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -50,7 +55,12 @@ class ProfileScreen extends StatelessWidget {
       clipBehavior: Clip.none,
       alignment: Alignment.center,
       children: [
-        Image.asset(AppAssets.profileBackground, width: double.infinity),
+        Image.asset(
+          AppAssets.profileBackground,
+          width: 1.sw,
+          fit: BoxFit.cover,
+          height: 0.3.sh,
+        ),
         // profile avatar
         Positioned(
           bottom: -60.r,
@@ -87,7 +97,7 @@ class ProfileScreen extends StatelessWidget {
               Positioned(
                 left: 0,
                 right: 0,
-                bottom: -50,
+                bottom: -50.r,
                 child: Column(
                   children: [
                     Text(

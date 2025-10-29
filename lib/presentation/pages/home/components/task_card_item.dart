@@ -158,7 +158,7 @@ class TaskCardItem extends StatelessWidget {
                   'Plan questions, capture insights, and document key takeaways.',
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
-                    fontSize: 12.sp,
+                    fontSize: 12.r,
                     color: AppColors.neutralSecondaryColor,
                   ),
                 ),
@@ -183,7 +183,7 @@ class TaskCardItem extends StatelessWidget {
                       'Mon, 18 Apr 2024',
                       style: TextStyle(
                         fontWeight: FontWeight.w400,
-                        fontSize: 14.sp,
+                        fontSize: 14.r,
                         color: AppColors.neutralSecondaryColor,
                       ),
                     ),

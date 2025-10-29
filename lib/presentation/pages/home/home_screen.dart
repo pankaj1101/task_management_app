@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 import 'package:task_management_app/core/enums/task_priority_enums.dart';
 import 'package:task_management_app/presentation/widgets/floating_action_widget.dart';
+import 'package:task_management_app/presentation/widgets/responsive_center_body.dart';
 
 import 'components/home_header.dart';
 import 'components/task_card_item.dart';
@@ -15,8 +16,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.whiteColor,
-      body: Padding(
-        padding: EdgeInsets.all(24.r),
+      body: ResponsiveCenterBody(
         child: Column(
           children: [
             SizedBox(height: 60.h),
