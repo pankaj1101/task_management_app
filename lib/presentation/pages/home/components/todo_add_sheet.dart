@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:task_management_app/core/constants/constants_export.dart';
 
 import 'date_picker_sheet_helper.dart';
+import 'time_picker_sheet_helper.dart';
 
 void showTodoAddBottomSheet(BuildContext context) {
   showModalBottomSheet(
@@ -84,7 +85,9 @@ void showTodoAddBottomSheet(BuildContext context) {
                         icon: SvgPicture.asset(AppAssets.calenderIconB),
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          showSelectTimeBottomSheet(context);
+                        },
                         icon: SvgPicture.asset(AppAssets.clockIcon),
                       ),
                       PopupMenuButton(
