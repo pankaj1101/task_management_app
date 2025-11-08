@@ -6,6 +6,7 @@ plugins {
 }
 
 android {
+    ndkVersion = "26.1.10909125"
     namespace = "com.example.task_management_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
